@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> TTN Bootcamp </title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.header{
+			width: 100%;
+			height: 20%;
+			text-decoration-color: green;
+			display: inline-block;
+			margin-top: 5%;
+			padding-left: 0%;
+			padding-right: 0%;
+			padding-bottom: 0px;
+			color: #00FA9A;
+
+		}
+		.adiv{
+			/*margin-left: 70%;*/
+			padding: 20px;
+			/* display: inline-block; */
+			float: right;		
+		}
+		a{
+			color: #00FA9A;
+			text-decoration: none;
+		}
+
+		.container{
+			border-top: none;
+			border-radius: 4px;
+			width: 40%;
+			margin-left: 25%;
+			padding-left:0px;
+			padding-top: 0px;
+			border: 1px solid #C0C0C0 ;
+
+		}
+		.hsf{
+			background-color:#C0C0C0;
+			padding-top: 10px;
+			padding-left: 20px;
+			padding-bottom: 5px;
+			color: white;
+		}
+
+		.form1{
+			padding-left: 15px;
+			padding-right: 10px;
+			padding-top: 10px;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 15px;
+
+		}
+
+		input[type=text], select {
+  			width: 100%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+		}
+
+		input[type=radio]{
+			padding-left: 20px;
+			margin-left: 30px; 
+		}
+		select{
+			background-color: #0EB55C;
+		}
+
+		textarea{
+			width: 99%;
+			border-radius: 4px;
+			border: 1px solid #ccc;
+
+		}
+
+		.file-upload .file-select{
+			display:block;
+			border: 2px solid #dce4ec;
+			height:40px;
+			line-height:40px;
+			text-align:left;
+			background:#FFFFFF;
+			overflow:hidden;
+			position:relative;
+		}
+		.file-upload .file-select .file-select-button{
+			background:#dce4ec;
+			padding:0 10px;
+			display:inline-block;
+			height:40px;
+			line-height:40px;
+		}
+		.file-upload .file-select input[type=file]{
+			z-index:100;
+			cursor:pointer;
+			position:absolute;
+			height:100%;
+			width:100%;
+			top:0;
+			left:0;
+			opacity:0;
+			filter:alpha(opacity=0);
+		}
+		.file-upload .file-select .file-select-name{
+			line-height:40px;
+			display:inline-block;
+			padding:0 10px;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			border: none;
+			border-radius:4px;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+			margin-left: 83%;
+			}
+		.last{
+			background-color: 	#DCDCDC;
+			padding-bottom: 10px;
+			margin-top:10px;
+
+		}
+
+		.button{
+			margin-right: 23px; 
+		}
+
+		#logo {
+			font-size: 30px;
+			/* display: inline-block; */
+			float: left;
+		}
+
+		body {
+			width: 85%;
+			margin: auto;
+		}
+
+		ul{
+			/* float: right; */
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+		li{
+			float: right;
+			padding: 0 10 0 10;
+		}
+
+		li a{
+			display: block;
+			color: #009797;
+			text-align: center;
+			margin: 10px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<span id = "logo"><b> TO THE NEW</b></span>
+		
+	<ul >
+		<li>
+			<a href="#">Quick Help</a>
+		</li>
+	<li>
+		<a href="#">Home</a>
+		</li>
+	</ul>
+		
+		
+		
+	</div>
+	<hr/>
+	
+	<div class="container">
+		<div class="hsf">
+			<h2>Bug Report</h2>
+			</div>
+		<form >
+			<div class="form1">
+			<label for="title">Title:*</label>
+			<input type="text" name="title" placeholder="Enter title here" required> <br/>
+			<label for="Description">Description:*</label>
+			<textarea name="Description" rows="5" cols="30"> </textarea> 
+			Operating system: 
+			<select>
+				<option value="Windows">Windows</option>
+				<option value="linux">Linux</option>
+				<option value="Apple iOS">Apple iOS</option>
+			</select> 
+			Product:  
+			<select>
+				<option value="Abc">Abc</option>
+				<option value="Xyx">Xyz</option>
+				<option value="Tuv">Tuv</option>
+			</select>
+			<label for="Version">Version:*</label>
+			<input type="text" name="Version"></form>
+			<label for="licence">Licence:</label>
+			<div> <input type="radio" name="licence" value="Free">Free 
+			<input type="radio" name="licence" value="Business">Business</div>
+			
+			Serverity:  
+			<select>
+				<option value="Critical">Critical</option>
+				<option value="Simple">Simple</option>
+			</select> 
+			<label>Attatchmnts:</label>
+			<div class="file-upload">
+				<div class="file-select">
+					<div class="file-select-button" id="fileName">
+						Choose File
+					</div>
+					<div class="file-select-name" id="noFile"> No file choosen</div>
+					<input type="file" name="ChooseFile" id="ChooseFile">
+				</div>
+			</div>
+
+			</div>
+
+			<div class="last">
+				<div class="button"> <input type="submit" name="Send" value="Send"></div>
+			</div>	
+
+		</form>
+	</div>
+	
+</body>
+</html>
+
