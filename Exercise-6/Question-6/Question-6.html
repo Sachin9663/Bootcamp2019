@@ -1,0 +1,25 @@
+<!-- After page load change the HTML of div element with "p" element -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question-6</title>
+</head>
+<body>
+
+	<div class>Hello World</div>
+	<div>To the new</div>
+	<p>bye bye.....</p>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(window).on("load",function () {
+  		$('div').replaceWith("<p>Welcome</p>");
+  	})
+	</script>
+
+</body>
+</html>

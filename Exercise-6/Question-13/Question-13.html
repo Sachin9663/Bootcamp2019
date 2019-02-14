@@ -1,0 +1,33 @@
+<!-- Get the max height of elements using jquery each method -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question-11</title>
+</head>
+<body>
+	<div>
+		<ul>
+			<li style="height:20px;">List_1</li>
+			<li style="height:16px;">List_2</li>
+			<li style="height:15px;">List_3</li>
+			<li style="height:18px;">List_4</li>
+			<li style="height:12px;">List_5</li>
+		</ul>
+	</div>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var max=-1;
+		$("li").each(function () {
+			var h=$(this).height();
+			max=h>max ? h : max;
+			// body...
+		});
+		alert("Max height of element is  :   "+max);
+	</script>
+</body>
+</html>

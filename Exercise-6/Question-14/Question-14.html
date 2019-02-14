@@ -1,0 +1,36 @@
+<!-- Chagne color of every cell which has numberl larger than 10. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question-13</title>
+</head>
+<body>
+	<table border="1px solid">
+		<tr class="tablecell">
+			<td>3</td>
+			<td>7</td>
+			<td>10</td>
+			<td>15</td>
+			<td>20</td>
+			<td>30</td>
+		</tr>
+	</table>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+			$(".tablecell").children().each(function() {
+			var rowText = $(this).text();
+			if (rowText >10) {
+				$(this).css("background-color","green");
+			}
+		});
+
+</script>
+
+	</script>
+</body>
+</html>

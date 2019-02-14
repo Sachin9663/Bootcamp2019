@@ -1,0 +1,41 @@
+<!-- Get dropdown selected value on onchanage event and append in div container -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qustion-10</title>
+</head>
+<body>
+
+<div id="menu">
+  <ul>
+    <li><a href="#">Link </a>
+      <ul class="dropdown-menu">
+        <li>List_1</li>
+        <li>List_2</li>
+        <li>List_3</li>
+        <li>List_4</li>
+        <li>List_5</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+
+	 <script type="text/javascript">
+	  	$(document).ready(function(){
+  		$("#menu li").hover(function(){
+    	$(".dropdown-menu", this).slideDown(1000);
+  }, function(){
+    $(".dropdown-menu", this).stop().slideUp(50);
+  });
+})
+
+	  	
+	  </script>
+
+</body>
+</html>

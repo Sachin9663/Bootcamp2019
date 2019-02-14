@@ -1,0 +1,21 @@
+<!-- On clicking on "google" tag. It is taking us to google home page. Stop it from happening. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery tutorial</title>
+</head>
+<body>
+	<a href="https://www.google.com/"> Google</a>
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+ </script>
+ <script type="text/javascript">
+ 	$("a").on("click",function (e) {
+ 		e.preventDefault();
+ 	});
+ </script>
+
+</body>
+</html>

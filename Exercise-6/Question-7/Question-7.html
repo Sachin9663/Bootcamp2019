@@ -1,0 +1,25 @@
+<!-- Bind a click function to an "click" element and append next "click" next to it. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question-7</title>
+</head>
+	<body>
+	 <div id="main">
+	   <button id="appendClick">Append Click</button>
+	 </div>
+		<p id="test"></p>
+	 <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	 <script type="text/javascript">
+	   $("#appendClick").click(function() {
+	     $("#main").append("<button>Click</button>");
+	   });
+ </script>
+</body>
+
+</body>
+</html>

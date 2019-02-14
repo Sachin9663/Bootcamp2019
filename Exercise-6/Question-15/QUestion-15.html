@@ -1,0 +1,36 @@
+<!-- Retrive the data from server using ajax get call -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question-15</title>
+</head>
+<body>
+	<button id="btn">Click here..</button>
+	 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+
+             $("#btn").click(function(){
+                 $.ajax({url:"https://jsonplaceholder.typicode.com/posts/1",
+                     success:function( data ) {
+                         document.write(JSON.stringify(data));
+                    //$( "body" ).append( data );
+                    $("#result").text(JSON.stringify(data));;
+                    alert( "Load was performed." );
+                      },
+
+                      error:function(error){
+                          alert(error.message)
+                      }
+
+                  });
+             });
+         });
+
+
+	</script>
+</body>
+</html>
