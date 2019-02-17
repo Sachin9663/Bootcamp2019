@@ -1,0 +1,24 @@
+<!--Prompt for amount, interest rate and no. of years and calculate simple interest.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Java Script Exercise</title>
+
+	<script  language="javascript" type="text/javascript" >
+		function simple_interest() {
+		
+		 var amount =prompt("Enter Principal amount Here");
+		 var interest_rate=prompt("Enter rate of interest Here");
+		 var Number_of_years=prompt("Enter Number of years Here");
+		 var simple_interest=(amount*interest_rate*Number_of_years)/100;
+		 document.write("Simple interest for the given data is Rs. "+simple_interest);
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<label for="simple simple_interest"> To Calculate Simple Interest Click Here ..</label>
+		<input type="button" value="simple_interest" onclick="simple_interest()">
+		</center>
+</body>
+</html>
